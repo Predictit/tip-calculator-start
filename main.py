@@ -6,6 +6,6 @@ amount_of_people = int(input("How many people to split the bill? "))
 
 
 total_each_person = (((percentage / 100) * total) + total) / amount_of_people
-
-
-print("Each person should pay: $",round(total_each_person, 2))
+round_amount = round(total_each_person, 2)
+final_amount = "{:.2f}".format(round_amount)
+print("Each person should pay: $",final_amount)
